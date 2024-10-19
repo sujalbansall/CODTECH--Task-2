@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Wave</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Write Wave</h1>
+        <p>~Ride the wave of creativity.</p>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#" onclick="showSection('myBlogs')">My Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="section">
+        <h2>Welcome to Write Wave</h2>
+        <p>Write, share, and read blogs about your interests!</p>
+        <form id="blogForm">
+            <input type="text" id="title" placeholder="Blog Title" required>
+            <input type="text" id="author" placeholder="Your Name" required>
+            <textarea id="content" rows="5" placeholder="Write your blog post here..." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About</h2>
+        <p>This is a blogging platform created for writing blogs.</p>
+        <p>Creator: Sujal Bansal</p>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>If you have any queries, contact this email: <a href="mailto:example@example.com">example@example.com</a></p>
+        <div id="contact-info" style="display: none;"></div>
+    </div>
+
+    <div id="myBlogs" class="section">
+        <h2>My Blogs</h2>
+        <div id="blogs-container"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sujal Bansal</p>
+    </footer>
+</body>
+</html>
